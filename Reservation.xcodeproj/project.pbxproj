@@ -10,12 +10,16 @@
 		9FA06FD81F711C450009DF63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FD71F711C450009DF63 /* AppDelegate.swift */; };
 		9FA06FDD1F711C450009DF63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA06FDB1F711C450009DF63 /* Main.storyboard */; };
 		9FA06FE01F711C450009DF63 /* Reservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FDE1F711C450009DF63 /* Reservation.xcdatamodeld */; };
-		9FA06FE21F711C450009DF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA06FE11F711C450009DF63 /* Assets.xcassets */; };
 		9FA06FE51F711C450009DF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA06FE31F711C450009DF63 /* LaunchScreen.storyboard */; };
 		9FA06FF01F711C450009DF63 /* ReservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FEF1F711C450009DF63 /* ReservationTests.swift */; };
 		9FA06FFB1F711C450009DF63 /* ReservationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FFA1F711C450009DF63 /* ReservationUITests.swift */; };
 		9FA070091F711F0C0009DF63 /* MyReservationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070081F711F0C0009DF63 /* MyReservationsTableViewController.swift */; };
 		9FA0700B1F7125510009DF63 /* MyReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0700A1F7125510009DF63 /* MyReservationTableViewCell.swift */; };
+		9FA0700D1F712CED0009DF63 /* SpaServicesPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0700C1F712CED0009DF63 /* SpaServicesPagesViewController.swift */; };
+		9FA070111F712D460009DF63 /* HotStonePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070101F712D460009DF63 /* HotStonePageViewController.swift */; };
+		9FA070131F712D5C0009DF63 /* DeepTessuePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070121F712D5C0009DF63 /* DeepTessuePageViewController.swift */; };
+		9FA070151F714CBE0009DF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA070141F714CBE0009DF63 /* Assets.xcassets */; };
+		9FA070171F714F590009DF63 /* MothersDayPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070161F714F590009DF63 /* MothersDayPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 		9FA06FD71F711C450009DF63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA06FDC1F711C450009DF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FA06FDF1F711C450009DF63 /* Reservation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reservation.xcdatamodel; sourceTree = "<group>"; };
-		9FA06FE11F711C450009DF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA06FE41F711C450009DF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA06FE61F711C450009DF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA06FEB1F711C450009DF63 /* ReservationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReservationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +54,11 @@
 		9FA06FFC1F711C450009DF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA070081F711F0C0009DF63 /* MyReservationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyReservationsTableViewController.swift; path = ../MyReservationsTableViewController.swift; sourceTree = "<group>"; };
 		9FA0700A1F7125510009DF63 /* MyReservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReservationTableViewCell.swift; sourceTree = "<group>"; };
+		9FA0700C1F712CED0009DF63 /* SpaServicesPagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaServicesPagesViewController.swift; sourceTree = "<group>"; };
+		9FA070101F712D460009DF63 /* HotStonePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotStonePageViewController.swift; sourceTree = "<group>"; };
+		9FA070121F712D5C0009DF63 /* DeepTessuePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepTessuePageViewController.swift; sourceTree = "<group>"; };
+		9FA070141F714CBE0009DF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FA070161F714F590009DF63 /* MothersDayPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MothersDayPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +109,17 @@
 		9FA06FD61F711C450009DF63 /* Reservation */ = {
 			isa = PBXGroup;
 			children = (
+				9FA06FD71F711C450009DF63 /* AppDelegate.swift */,
 				9FA070081F711F0C0009DF63 /* MyReservationsTableViewController.swift */,
 				9FA0700A1F7125510009DF63 /* MyReservationTableViewCell.swift */,
-				9FA06FD71F711C450009DF63 /* AppDelegate.swift */,
+				9FA0700C1F712CED0009DF63 /* SpaServicesPagesViewController.swift */,
+				9FA070161F714F590009DF63 /* MothersDayPageViewController.swift */,
+				9FA070101F712D460009DF63 /* HotStonePageViewController.swift */,
+				9FA070121F712D5C0009DF63 /* DeepTessuePageViewController.swift */,
 				9FA06FDB1F711C450009DF63 /* Main.storyboard */,
-				9FA06FE11F711C450009DF63 /* Assets.xcassets */,
 				9FA06FE31F711C450009DF63 /* LaunchScreen.storyboard */,
 				9FA06FE61F711C450009DF63 /* Info.plist */,
+				9FA070141F714CBE0009DF63 /* Assets.xcassets */,
 				9FA06FDE1F711C450009DF63 /* Reservation.xcdatamodeld */,
 			);
 			path = Reservation;
@@ -239,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA06FE51F711C450009DF63 /* LaunchScreen.storyboard in Resources */,
-				9FA06FE21F711C450009DF63 /* Assets.xcassets in Resources */,
+				9FA070151F714CBE0009DF63 /* Assets.xcassets in Resources */,
 				9FA06FDD1F711C450009DF63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,9 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA070131F712D5C0009DF63 /* DeepTessuePageViewController.swift in Sources */,
 				9FA0700B1F7125510009DF63 /* MyReservationTableViewCell.swift in Sources */,
 				9FA070091F711F0C0009DF63 /* MyReservationsTableViewController.swift in Sources */,
+				9FA070111F712D460009DF63 /* HotStonePageViewController.swift in Sources */,
 				9FA06FD81F711C450009DF63 /* AppDelegate.swift in Sources */,
+				9FA070171F714F590009DF63 /* MothersDayPageViewController.swift in Sources */,
+				9FA0700D1F712CED0009DF63 /* SpaServicesPagesViewController.swift in Sources */,
 				9FA06FE01F711C450009DF63 /* Reservation.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

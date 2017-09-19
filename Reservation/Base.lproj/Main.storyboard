@@ -14,23 +14,23 @@
         <scene sceneID="g8e-xP-pT9">
             <objects>
                 <tableViewController id="Zks-g0-M5H" customClass="MyReservationsTableViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="234" sectionHeaderHeight="28" sectionFooterHeight="28" id="hwI-dH-9nW">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" sectionHeaderHeight="28" sectionFooterHeight="28" id="hwI-dH-9nW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyReservationsCell" rowHeight="234" id="GPe-Ps-LsY" customClass="MyReservationTableViewCell" customModule="Reservation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="234"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyReservationsCell" rowHeight="250" id="GPe-Ps-LsY" customClass="MyReservationTableViewCell" customModule="Reservation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GPe-Ps-LsY" id="uqH-gI-Gar">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="234"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kp4-m0-4CX">
-                                            <rect key="frame" x="0.0" y="8" width="375" height="54"/>
+                                            <rect key="frame" x="10" y="8" width="355" height="54"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPo-Hj-ZDR">
-                                                    <rect key="frame" x="295" y="17" width="60" height="21"/>
+                                                    <rect key="frame" x="291" y="17" width="60" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="PY4-eV-NMb"/>
                                                         <constraint firstAttribute="width" constant="60" id="hhi-0Q-Njh"/>
@@ -51,8 +51,8 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="nPo-Hj-ZDR" secondAttribute="trailing" constant="20" id="KdR-FC-pUQ"/>
-                                                <constraint firstItem="nPo-Hj-ZDR" firstAttribute="leading" secondItem="HoU-gz-VFu" secondAttribute="trailing" constant="8" id="ONH-7K-L78"/>
+                                                <constraint firstAttribute="trailing" secondItem="nPo-Hj-ZDR" secondAttribute="trailing" constant="4" id="KdR-FC-pUQ"/>
+                                                <constraint firstItem="nPo-Hj-ZDR" firstAttribute="leading" secondItem="HoU-gz-VFu" secondAttribute="trailing" constant="4" id="ONH-7K-L78"/>
                                                 <constraint firstItem="nPo-Hj-ZDR" firstAttribute="centerY" secondItem="kp4-m0-4CX" secondAttribute="centerY" id="XrJ-TY-IXT"/>
                                                 <constraint firstItem="HoU-gz-VFu" firstAttribute="leading" secondItem="kp4-m0-4CX" secondAttribute="leading" constant="20" id="giV-OY-Fbu"/>
                                                 <constraint firstItem="HoU-gz-VFu" firstAttribute="centerY" secondItem="kp4-m0-4CX" secondAttribute="centerY" id="i64-Cr-3YM"/>
@@ -126,10 +126,10 @@
                                         <constraint firstItem="5i3-pB-do6" firstAttribute="leading" secondItem="uqH-gI-Gar" secondAttribute="leadingMargin" constant="12" id="DWh-2x-84b"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="rbh-PR-ito" secondAttribute="trailing" constant="12" id="G2J-v2-t1V"/>
                                         <constraint firstItem="UVl-uY-aOq" firstAttribute="leading" secondItem="uqH-gI-Gar" secondAttribute="leadingMargin" constant="12" id="GWh-Q2-UBU"/>
-                                        <constraint firstItem="kp4-m0-4CX" firstAttribute="leading" secondItem="uqH-gI-Gar" secondAttribute="leading" id="Gwr-VW-0BA"/>
+                                        <constraint firstItem="kp4-m0-4CX" firstAttribute="leading" secondItem="uqH-gI-Gar" secondAttribute="leading" constant="10" id="Gwr-VW-0BA"/>
                                         <constraint firstItem="dDI-hg-UQr" firstAttribute="leading" secondItem="uqH-gI-Gar" secondAttribute="leadingMargin" constant="12" id="K1B-YX-d4R"/>
                                         <constraint firstItem="kp4-m0-4CX" firstAttribute="top" secondItem="uqH-gI-Gar" secondAttribute="top" constant="8" id="M88-42-Kss"/>
-                                        <constraint firstAttribute="trailing" secondItem="kp4-m0-4CX" secondAttribute="trailing" id="O34-7B-toU"/>
+                                        <constraint firstAttribute="trailing" secondItem="kp4-m0-4CX" secondAttribute="trailing" constant="10" id="O34-7B-toU"/>
                                         <constraint firstItem="rbh-PR-ito" firstAttribute="top" secondItem="UVl-uY-aOq" secondAttribute="bottom" constant="2" id="Pb0-yG-w4J"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="UVl-uY-aOq" secondAttribute="trailing" constant="13" id="RGo-dg-Fk7"/>
                                         <constraint firstItem="5i3-pB-do6" firstAttribute="top" secondItem="UVl-uY-aOq" secondAttribute="bottom" constant="2" id="YX8-uG-ELl"/>
@@ -162,6 +162,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="eRv-Mc-YwN">
                             <connections>
                                 <action selector="addNewReservation:" destination="Zks-g0-M5H" id="OZH-ax-X66"/>
+                                <segue destination="Phc-TL-PGm" kind="show" id="LLS-tw-9Mg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -169,6 +170,160 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWm-Hy-eGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="757.60000000000002" y="171.36431784107947"/>
+        </scene>
+        <!--Mothers Day Page View Controller-->
+        <scene sceneID="7bF-Vk-0lo">
+            <objects>
+                <viewController storyboardIdentifier="MothersDayPage" id="uEa-H5-0c7" customClass="MothersDayPageViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gHu-cs-Tw7"/>
+                        <viewControllerLayoutGuide type="bottom" id="jwI-tX-bGg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvy-j6-zBH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MothersDay" translatesAutoresizingMaskIntoConstraints="NO" id="6BB-r8-c9U">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPe-eh-dkQ">
+                                <rect key="frame" x="40" y="240" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cg1-mK-jb7"/>
+                                    <constraint firstAttribute="width" constant="142" id="ChE-Pr-Hhq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="RESERVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reserve:" destination="uEa-H5-0c7" eventType="touchUpInside" id="WCy-j0-nHD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6BB-r8-c9U" firstAttribute="top" secondItem="gHu-cs-Tw7" secondAttribute="bottom" id="XAU-bX-pDJ"/>
+                            <constraint firstItem="yPe-eh-dkQ" firstAttribute="leading" secondItem="zvy-j6-zBH" secondAttribute="leading" constant="40" id="ZYK-AX-maZ"/>
+                            <constraint firstItem="yPe-eh-dkQ" firstAttribute="top" secondItem="gHu-cs-Tw7" secondAttribute="bottom" constant="220" id="d1O-qX-J3o"/>
+                            <constraint firstAttribute="trailing" secondItem="6BB-r8-c9U" secondAttribute="trailing" id="gxh-dD-dEA"/>
+                            <constraint firstItem="jwI-tX-bGg" firstAttribute="top" secondItem="6BB-r8-c9U" secondAttribute="bottom" id="niz-N2-bsC"/>
+                            <constraint firstItem="6BB-r8-c9U" firstAttribute="leading" secondItem="zvy-j6-zBH" secondAttribute="leading" id="p7w-8r-jAV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reserveBtn" destination="yPe-eh-dkQ" id="G9a-eG-Wl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOT-Vp-qTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="993.55322338830592"/>
+        </scene>
+        <!--Hot Stone Page View Controller-->
+        <scene sceneID="xgA-hx-BsM">
+            <objects>
+                <viewController storyboardIdentifier="HotStonePage" id="a2n-mr-hCi" customClass="HotStonePageViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JPP-qo-bsU"/>
+                        <viewControllerLayoutGuide type="bottom" id="rDX-Kv-QKC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zne-4K-ZuZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HotStone" translatesAutoresizingMaskIntoConstraints="NO" id="DaI-f6-Nda">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-lY-f5C">
+                                <rect key="frame" x="40" y="240" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="NOo-nl-aT3"/>
+                                    <constraint firstAttribute="height" constant="30" id="jCW-47-4kc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="RESERVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reserve:" destination="a2n-mr-hCi" eventType="touchUpInside" id="OmL-A2-jVO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VtD-lY-f5C" firstAttribute="top" secondItem="JPP-qo-bsU" secondAttribute="bottom" constant="220" id="9BL-Mo-RPq"/>
+                            <constraint firstItem="rDX-Kv-QKC" firstAttribute="top" secondItem="DaI-f6-Nda" secondAttribute="bottom" id="9NT-au-xy7"/>
+                            <constraint firstAttribute="trailing" secondItem="DaI-f6-Nda" secondAttribute="trailing" id="BWi-HF-RCT"/>
+                            <constraint firstItem="DaI-f6-Nda" firstAttribute="leading" secondItem="zne-4K-ZuZ" secondAttribute="leading" id="EJx-Zi-FJ2"/>
+                            <constraint firstItem="DaI-f6-Nda" firstAttribute="top" secondItem="JPP-qo-bsU" secondAttribute="bottom" id="FoG-LV-Zmw"/>
+                            <constraint firstItem="VtD-lY-f5C" firstAttribute="leading" secondItem="zne-4K-ZuZ" secondAttribute="leadingMargin" constant="24" id="Jpx-gW-qMi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reserveBtn" destination="VtD-lY-f5C" id="5l1-DK-eUS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89o-CH-dkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621.5999999999999" y="993.55322338830592"/>
+        </scene>
+        <!--Deep Tessue Page View Controller-->
+        <scene sceneID="blB-U6-PGv">
+            <objects>
+                <viewController storyboardIdentifier="DeepTessuePage" id="f95-N9-0fR" customClass="DeepTessuePageViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UOP-6G-wmm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hbe-V2-SdS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4iz-ML-NoD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DeepTissue" translatesAutoresizingMaskIntoConstraints="NO" id="mFD-8X-TxQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQG-91-EIn">
+                                <rect key="frame" x="40" y="240" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lFV-TP-jeP"/>
+                                    <constraint firstAttribute="width" constant="142" id="oP4-D7-nln"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="RESERVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reserve:" destination="f95-N9-0fR" eventType="touchUpInside" id="eRi-ku-rkR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JQG-91-EIn" firstAttribute="top" secondItem="UOP-6G-wmm" secondAttribute="bottom" constant="220" id="ECS-fB-hZ9"/>
+                            <constraint firstItem="JQG-91-EIn" firstAttribute="leading" secondItem="4iz-ML-NoD" secondAttribute="leadingMargin" constant="24" id="Iio-uS-E1s"/>
+                            <constraint firstAttribute="trailing" secondItem="mFD-8X-TxQ" secondAttribute="trailing" id="RmO-Jr-xxT"/>
+                            <constraint firstItem="mFD-8X-TxQ" firstAttribute="leading" secondItem="4iz-ML-NoD" secondAttribute="leading" id="cPl-DC-y5i"/>
+                            <constraint firstItem="Hbe-V2-SdS" firstAttribute="top" secondItem="mFD-8X-TxQ" secondAttribute="bottom" id="fem-9W-CiH"/>
+                            <constraint firstItem="mFD-8X-TxQ" firstAttribute="top" secondItem="UOP-6G-wmm" secondAttribute="bottom" id="kbm-hF-bJL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reserveBtn" destination="JQG-91-EIn" id="pCJ-Ej-fVI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wd0-rH-BGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237.5999999999999" y="993.55322338830592"/>
+        </scene>
+        <!--SPA SERVICE-->
+        <scene sceneID="bbc-SK-dnW">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="SPA SERVICE" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Phc-TL-PGm" customClass="SpaServicesPagesViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lY-7T-7zK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="171"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nq5-zw-ytE">
@@ -189,4 +344,9 @@
             <point key="canvasLocation" x="-55.200000000000003" y="172.26386806596702"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DeepTissue" width="960" height="1707"/>
+        <image name="HotStone" width="960" height="1707"/>
+        <image name="MothersDay" width="960" height="1707"/>
+    </resources>
 </document>

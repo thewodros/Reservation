@@ -15,6 +15,8 @@ class MyReservationsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //user only arrow for nav back button
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)        
     }
 
     override func didReceiveMemoryWarning() {
