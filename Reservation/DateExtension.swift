@@ -32,4 +32,10 @@ extension Date {
         df.setLocalizedDateFormatFromTemplate("dd")
         return df.string(from: self)
     }
+    
+    func dateDispaly() -> String {
+        let df = DateFormatter()
+        df.setLocalizedDateFormatFromTemplate("EEEE, MMM d, yyyy")
+        return df.string(from: self)
+    }
 }

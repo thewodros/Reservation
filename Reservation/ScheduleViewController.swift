@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 
 class ScheduleViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -15,6 +16,9 @@ class ScheduleViewController: UIViewController, UICollectionViewDataSource, UICo
     @IBOutlet weak var availableDatesCollectionView: UICollectionView!
     @IBOutlet weak var availableTimesCollectionView: UICollectionView!
     @IBOutlet weak var reserveBtn: UIButton!
+    
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var availableDates: [AvailableDate] = []
     var availableTimes: [String] = ["09:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "01:00 PM", "02:00 PM", "03:00 PM", "04:00 PM", "05:00 PM", "06:00 PM", "07:00 PM", "08:00 PM"]
@@ -43,6 +47,21 @@ class ScheduleViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     @IBAction func reserve(_ sender: Any) {
+        //save selectd reservation event to core data
+        let context = appDelegate.persistentContainer.viewContext
+        let event = NSEntityDescription.insertNewObject(forEntityName: "Event", into: context)    //reservation object
+        event.setValue("Massage focused on the deepest layer of muscles to target knots and release chronic muscle tension.", forKey: "desc")
+        event.setValue("30M", forKey: "length")
+        event.setValue(1, forKey: "partySize")
+        event.setValue(selectedTime ?? "", forKey: "time")
+        event.setValue("Hot Stone", forKey: "type")
+        event.setValue(selectedDate ?? Date(), forKey: "date")
+        do {
+            try context.save()
+            print("saved")
+        } catch {
+            print("Error: saving event data to core data failed")
+        }
         self.navigationController?.popToRootViewController(animated: true)
     }
     
