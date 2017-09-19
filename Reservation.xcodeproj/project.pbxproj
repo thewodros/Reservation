@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9FA06FD81F711C450009DF63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FD71F711C450009DF63 /* AppDelegate.swift */; };
-		9FA06FDA1F711C450009DF63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FD91F711C450009DF63 /* ViewController.swift */; };
 		9FA06FDD1F711C450009DF63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA06FDB1F711C450009DF63 /* Main.storyboard */; };
 		9FA06FE01F711C450009DF63 /* Reservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FDE1F711C450009DF63 /* Reservation.xcdatamodeld */; };
 		9FA06FE21F711C450009DF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA06FE11F711C450009DF63 /* Assets.xcassets */; };
 		9FA06FE51F711C450009DF63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA06FE31F711C450009DF63 /* LaunchScreen.storyboard */; };
 		9FA06FF01F711C450009DF63 /* ReservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FEF1F711C450009DF63 /* ReservationTests.swift */; };
 		9FA06FFB1F711C450009DF63 /* ReservationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA06FFA1F711C450009DF63 /* ReservationUITests.swift */; };
+		9FA070091F711F0C0009DF63 /* MyReservationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070081F711F0C0009DF63 /* MyReservationsTableViewController.swift */; };
+		9FA0700B1F7125510009DF63 /* MyReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0700A1F7125510009DF63 /* MyReservationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		9FA06FD41F711C450009DF63 /* Reservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA06FD71F711C450009DF63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FA06FD91F711C450009DF63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FA06FDC1F711C450009DF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FA06FDF1F711C450009DF63 /* Reservation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reservation.xcdatamodel; sourceTree = "<group>"; };
 		9FA06FE11F711C450009DF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		9FA06FF61F711C450009DF63 /* ReservationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReservationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA06FFA1F711C450009DF63 /* ReservationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationUITests.swift; sourceTree = "<group>"; };
 		9FA06FFC1F711C450009DF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA070081F711F0C0009DF63 /* MyReservationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyReservationsTableViewController.swift; path = ../MyReservationsTableViewController.swift; sourceTree = "<group>"; };
+		9FA0700A1F7125510009DF63 /* MyReservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReservationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 		9FA06FD61F711C450009DF63 /* Reservation */ = {
 			isa = PBXGroup;
 			children = (
+				9FA070081F711F0C0009DF63 /* MyReservationsTableViewController.swift */,
+				9FA0700A1F7125510009DF63 /* MyReservationTableViewCell.swift */,
 				9FA06FD71F711C450009DF63 /* AppDelegate.swift */,
-				9FA06FD91F711C450009DF63 /* ViewController.swift */,
 				9FA06FDB1F711C450009DF63 /* Main.storyboard */,
 				9FA06FE11F711C450009DF63 /* Assets.xcassets */,
 				9FA06FE31F711C450009DF63 /* LaunchScreen.storyboard */,
@@ -262,7 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA06FDA1F711C450009DF63 /* ViewController.swift in Sources */,
+				9FA0700B1F7125510009DF63 /* MyReservationTableViewCell.swift in Sources */,
+				9FA070091F711F0C0009DF63 /* MyReservationsTableViewController.swift in Sources */,
 				9FA06FD81F711C450009DF63 /* AppDelegate.swift in Sources */,
 				9FA06FE01F711C450009DF63 /* Reservation.xcdatamodeld in Sources */,
 			);
@@ -360,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
