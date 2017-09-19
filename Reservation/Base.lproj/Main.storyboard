@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GPe-Ps-LsY" id="uqH-gI-Gar">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kp4-m0-4CX">
@@ -247,6 +248,7 @@
                                 </state>
                                 <connections>
                                     <action selector="reserve:" destination="a2n-mr-hCi" eventType="touchUpInside" id="OmL-A2-jVO"/>
+                                    <segue destination="NCQ-1n-I4u" kind="show" id="k6j-hT-kUw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -320,10 +322,162 @@
         <!--SPA SERVICE-->
         <scene sceneID="bbc-SK-dnW">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" title="SPA SERVICE" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Phc-TL-PGm" customClass="SpaServicesPagesViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="SPA SERVICE" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Phc-TL-PGm" customClass="SpaServicesPagesViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="NCQ-1n-I4u" kind="show" identifier="SegueSpaServiceToSchedule" id="dxW-3l-hI4"/>
+                    </connections>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lY-7T-7zK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1623" y="171"/>
+        </scene>
+        <!--SCHEDULE-->
+        <scene sceneID="bm7-1Z-Ege">
+            <objects>
+                <viewController title="SCHEDULE" id="NCQ-1n-I4u" customClass="ScheduleViewController" customModule="Reservation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MbP-1h-Q0U"/>
+                        <viewControllerLayoutGuide type="bottom" id="tF0-yB-3yR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Im-Lo-1Ye">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HotStoneSmall" translatesAutoresizingMaskIntoConstraints="NO" id="u1I-eO-Ema">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="massage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKZ-eS-AcB">
+                                <rect key="frame" x="16" y="84" width="344" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FKZ-eS-AcB" secondAttribute="height" multiplier="172:99" id="6vh-cK-tb0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.40000000000000002" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uFV-tR-crk">
+                                <rect key="frame" x="0.0" y="419" width="375" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="hkb-f2-AMB"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sY6-yw-Ce1">
+                                    <size key="itemSize" width="84" height="71"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvailableDateCollectionCell" id="cbb-Ww-OAI" customClass="AvailableDateCollectionViewCell" customModule="Reservation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-0.5" width="84" height="71"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsK-7a-Obs">
+                                                    <rect key="frame" x="0.0" y="13" width="84" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="02" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckE-DP-Dih">
+                                                    <rect key="frame" x="0.0" y="39" width="84" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="dateLbl" destination="ckE-DP-Dih" id="03B-Sc-8gB"/>
+                                            <outlet property="dayLbl" destination="VsK-7a-Obs" id="6eY-eP-27a"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NCQ-1n-I4u" id="3oB-9A-30S"/>
+                                    <outlet property="delegate" destination="NCQ-1n-I4u" id="ZDy-gz-iyI"/>
+                                </connections>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.40000000000000002" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7GJ-tq-PFf">
+                                <rect key="frame" x="0.0" y="508" width="375" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="A3U-Oa-VZF"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hfO-QX-N17">
+                                    <size key="itemSize" width="114" height="43"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AvailableTimeCollectionCell" id="hkN-rX-Es8" customClass="AvailableTimeCollectionViewCell" customModule="Reservation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="114" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="09:00AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCb-Xg-NIN">
+                                                    <rect key="frame" x="0.0" y="11" width="114" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="timeLbl" destination="gCb-Xg-NIN" id="gmy-fl-Xne"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="NCQ-1n-I4u" id="SNV-HC-BsK"/>
+                                    <outlet property="delegate" destination="NCQ-1n-I4u" id="MzN-YJ-ahm"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeV-I4-P78">
+                                <rect key="frame" x="0.0" y="614" width="375" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="RESERVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reserve:" destination="NCQ-1n-I4u" eventType="touchUpInside" id="vBb-Sc-dQb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FKZ-eS-AcB" secondAttribute="trailing" constant="15" id="2on-gc-uMH"/>
+                            <constraint firstItem="FKZ-eS-AcB" firstAttribute="leading" secondItem="4Im-Lo-1Ye" secondAttribute="leading" constant="16" id="Jyh-XR-Hml"/>
+                            <constraint firstItem="uFV-tR-crk" firstAttribute="leading" secondItem="4Im-Lo-1Ye" secondAttribute="leading" id="M1l-Iz-YKK"/>
+                            <constraint firstItem="7GJ-tq-PFf" firstAttribute="top" secondItem="uFV-tR-crk" secondAttribute="bottom" constant="19" id="OxY-Ea-ixv"/>
+                            <constraint firstItem="7GJ-tq-PFf" firstAttribute="leading" secondItem="4Im-Lo-1Ye" secondAttribute="leading" id="SqQ-YB-1tM"/>
+                            <constraint firstItem="tF0-yB-3yR" firstAttribute="top" secondItem="7GJ-tq-PFf" secondAttribute="bottom" constant="116" id="UNA-OY-V29"/>
+                            <constraint firstAttribute="trailing" secondItem="uFV-tR-crk" secondAttribute="trailing" id="Yhx-RU-FUX"/>
+                            <constraint firstItem="FKZ-eS-AcB" firstAttribute="top" secondItem="MbP-1h-Q0U" secondAttribute="bottom" constant="20" id="s3y-4Z-nXw"/>
+                            <constraint firstAttribute="trailing" secondItem="7GJ-tq-PFf" secondAttribute="trailing" id="uRQ-1y-dMJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="availableDatesCollectionView" destination="uFV-tR-crk" id="SI0-W0-beJ"/>
+                        <outlet property="availableTimesCollectionView" destination="7GJ-tq-PFf" id="zMw-To-sj6"/>
+                        <outlet property="massageDetailsLbl" destination="FKZ-eS-AcB" id="SYU-iz-5lx"/>
+                        <outlet property="reserveBtn" destination="jeV-I4-P78" id="YxI-0z-310"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QmM-PH-ePh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752.8000000000002" y="169.56521739130437"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nq5-zw-ytE">
@@ -347,6 +501,10 @@
     <resources>
         <image name="DeepTissue" width="960" height="1707"/>
         <image name="HotStone" width="960" height="1707"/>
+        <image name="HotStoneSmall" width="250" height="400"/>
         <image name="MothersDay" width="960" height="1707"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dxW-3l-hI4"/>
+    </inferredMetricsTieBreakers>
 </document>

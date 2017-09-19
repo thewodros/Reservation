@@ -20,6 +20,11 @@
 		9FA070131F712D5C0009DF63 /* DeepTessuePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070121F712D5C0009DF63 /* DeepTessuePageViewController.swift */; };
 		9FA070151F714CBE0009DF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA070141F714CBE0009DF63 /* Assets.xcassets */; };
 		9FA070171F714F590009DF63 /* MothersDayPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070161F714F590009DF63 /* MothersDayPageViewController.swift */; };
+		9FA070191F7160C40009DF63 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070181F7160C40009DF63 /* ScheduleViewController.swift */; };
+		9FA0701B1F71670E0009DF63 /* AvailableDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0701A1F71670E0009DF63 /* AvailableDateCollectionViewCell.swift */; };
+		9FA0701D1F71671E0009DF63 /* AvailableTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0701C1F71671E0009DF63 /* AvailableTimeCollectionViewCell.swift */; };
+		9FA0701F1F716E1F0009DF63 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA0701E1F716E1F0009DF63 /* DateExtension.swift */; };
+		9FA070211F716F020009DF63 /* AvailableDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA070201F716F020009DF63 /* AvailableDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		9FA070121F712D5C0009DF63 /* DeepTessuePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepTessuePageViewController.swift; sourceTree = "<group>"; };
 		9FA070141F714CBE0009DF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA070161F714F590009DF63 /* MothersDayPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MothersDayPageViewController.swift; sourceTree = "<group>"; };
+		9FA070181F7160C40009DF63 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		9FA0701A1F71670E0009DF63 /* AvailableDateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FA0701C1F71671E0009DF63 /* AvailableTimeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FA0701E1F716E1F0009DF63 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		9FA070201F716F020009DF63 /* AvailableDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,11 @@
 				9FA070161F714F590009DF63 /* MothersDayPageViewController.swift */,
 				9FA070101F712D460009DF63 /* HotStonePageViewController.swift */,
 				9FA070121F712D5C0009DF63 /* DeepTessuePageViewController.swift */,
+				9FA070181F7160C40009DF63 /* ScheduleViewController.swift */,
+				9FA0701A1F71670E0009DF63 /* AvailableDateCollectionViewCell.swift */,
+				9FA0701C1F71671E0009DF63 /* AvailableTimeCollectionViewCell.swift */,
+				9FA0701E1F716E1F0009DF63 /* DateExtension.swift */,
+				9FA070201F716F020009DF63 /* AvailableDate.swift */,
 				9FA06FDB1F711C450009DF63 /* Main.storyboard */,
 				9FA06FE31F711C450009DF63 /* LaunchScreen.storyboard */,
 				9FA06FE61F711C450009DF63 /* Info.plist */,
@@ -278,8 +293,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA070131F712D5C0009DF63 /* DeepTessuePageViewController.swift in Sources */,
+				9FA0701F1F716E1F0009DF63 /* DateExtension.swift in Sources */,
 				9FA0700B1F7125510009DF63 /* MyReservationTableViewCell.swift in Sources */,
+				9FA070211F716F020009DF63 /* AvailableDate.swift in Sources */,
+				9FA0701D1F71671E0009DF63 /* AvailableTimeCollectionViewCell.swift in Sources */,
 				9FA070091F711F0C0009DF63 /* MyReservationsTableViewController.swift in Sources */,
+				9FA070191F7160C40009DF63 /* ScheduleViewController.swift in Sources */,
+				9FA0701B1F71670E0009DF63 /* AvailableDateCollectionViewCell.swift in Sources */,
 				9FA070111F712D460009DF63 /* HotStonePageViewController.swift in Sources */,
 				9FA06FD81F711C450009DF63 /* AppDelegate.swift in Sources */,
 				9FA070171F714F590009DF63 /* MothersDayPageViewController.swift in Sources */,

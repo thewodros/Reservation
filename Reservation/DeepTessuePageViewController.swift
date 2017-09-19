@@ -15,6 +15,7 @@ class DeepTessuePageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         reserveBtn.layer.cornerRadius = 5.0
     }
 

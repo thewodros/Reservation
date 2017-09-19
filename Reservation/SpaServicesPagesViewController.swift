@@ -23,7 +23,8 @@ class SpaServicesPagesViewController: UIPageViewController, UIPageViewController
     var tableView : UITableView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         self.dataSource = self;
     
         //set first page
@@ -135,5 +136,8 @@ class SpaServicesPagesViewController: UIPageViewController, UIPageViewController
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.row == 2 {
+            self.performSegue(withIdentifier: "SegueSpaServiceToSchedule", sender: self)
+        }
     }
 }
